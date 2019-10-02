@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Cookie from "js-cookie";
 import { parseCookies } from "../lib/parseCookies";
 
-const Index = ({ initialRememberValue }) => {
+const Index = ({ initialRememberValue = "true" }) => {
   const [rememberMe, setRememberMe] = useState(() =>
     JSON.parse(initialRememberValue)
   );
